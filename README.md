@@ -33,7 +33,7 @@ A **real-time** chat application built using the **MERN stack (MongoDB, Express.
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/StevenSriram/MERN_Chat.git
+git clone https://github.com/Vignesh023-ui/MERN_Chat
 cd MERN_Chat
 ```
 
@@ -98,6 +98,6 @@ This project is licensed under the **MIT License**.
 
 ## 👨‍💻 Author
 
-[StevenSriram](https://github.com/StevenSriram)
+[Vignesh](https://github.com/Vignesh023-ui)
 
 💙 If you like this project, give it a ⭐ on GitHub! 🚀
