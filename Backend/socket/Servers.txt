@@ -1,0 +1,26 @@
+Express : 
+
+    - express is a web framework for Node.js that simplifies handling
+      HTTP requests (e.g., serving HTML files, handling routes, etc.)
+
+    - But Express alone can’t handle real-time communication 
+
+
+SOCKET IO : 
+
+    - socket.io lets you send and receive messages in real time
+      (like chat apps or live notifications)
+
+    -  But Socket.IO needs an HTTP server to work 
+        because it uses the same connection as your website
+
+    
+HTTP Module :
+
+    - The HTTP server (created using `http.createServer`)
+      is like a bridge between Express and Socket.IO
+
+    - It lets 
+        . Express handle normal web stuff (like serving your HTML file) and
+        . Socket.IO handle real-time stuff (like chat messages).
+    

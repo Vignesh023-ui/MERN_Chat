@@ -1,0 +1,28 @@
+Why Not Use Express Server itself { app.listen() } ?
+
+   - `app.listen()` is a shorthand method provided by Express 
+        to create an HTTP server and start listening for requests
+   
+   - However, it doesn’t give you direct access to the underlying 
+        HTTP server object
+
+   - Since Socket.IO needs access to the HTTP server object,
+        you need to explicitly create the server using `http.createServer(app)`
+        and then pass it to Socket.IO
+
+    
+Why Does Socket.IO Use the Same Connection as Your Website ?
+
+   - When a user visits your website, their browser establishes 
+        an "HTTP connection to your server" to load the webpage 
+        (e.g., HTML, CSS, JS)
+        
+   - Socket.IO "piggybacks on this same connection" to 
+        establish a real-time communication channel
+
+   - Here’s how it works:
+   
+     1. The browser first connects to your server using HTTP
+     2. Socket.IO then "upgrades" this connection to a "WebSocket" to enable real-time communication
+     3. This allows Socket.IO to reuse the same connection that was initially 
+        used to load your website, making it efficient and seamless
